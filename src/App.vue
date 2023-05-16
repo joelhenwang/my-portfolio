@@ -1,4 +1,5 @@
 <template>
+
     <header-bar class="hidden from-top"></header-bar>
     <div style="height: 100px"></div>
     <div class="grid-container">
@@ -10,13 +11,11 @@
 </template>
 
 <script>
-
 import TopGrid from "@/components/top-grid.vue";
 import HeaderBar from "@/components/header-bar.vue";
 import ChronologyCard from "@/components/chronology-components/chronology-card.vue";
 
 export default {
-    name: 'App',
     mounted() {
         const observer = new IntersectionObserver( (entries) => {
             entries.forEach((entry) => {
